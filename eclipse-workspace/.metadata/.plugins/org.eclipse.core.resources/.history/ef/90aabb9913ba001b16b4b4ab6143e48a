@@ -1,0 +1,11 @@
+package java8features;
+import java.time.*;
+
+public class task6 {
+
+	public static void main(String[] args) {
+		LocalDateTime date = LocalDateTime.parse("1990-04-22 T ")
+
+	}
+
+}

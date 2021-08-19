@@ -1,0 +1,49 @@
+package java8featuresStramApi;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+public class StreamExample {
+	public static void main(String[] args) {
+		List<Employee> empList = new ArrayList<>();
+		empList.add(new Employee("Rinu", LocalDate.of(1998, 10, 12)));
+		empList.add(new Employee("Sibu", LocalDate.of(1996, 11, 22)));
+		empList.add(new Employee("Liya", LocalDate.of(1999, 12, 21)));
+		empList.add(new Employee("Dude", LocalDate.of(2000, 10, 19)));
+
+
+		//empList.stream().filter(p -> (p.getAge() > 30)).forEach(p -> System.out.println(p.getName()));
+		
+
+	}
+
+}
+
+class Employee {
+	private String name;
+	private LocalDate dateofbirth ;
+
+	public Employee() {
+	}
+	public Employee(String name, LocalDate dateOfBirth) {
+		setName(name);
+		setDateOfBirth(dateOfBirth);
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public LocalDate getDateOfBirth() {
+		return dateofbirth;
+	}
+	public void setDateOfBirth(LocalDate dateOfBirth) {
+		this.dateofbirth = dateOfBirth;
+	}
+	
+}
+
+	

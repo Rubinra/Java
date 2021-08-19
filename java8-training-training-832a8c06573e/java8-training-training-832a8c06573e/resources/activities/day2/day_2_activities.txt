@@ -1,0 +1,10 @@
+1.	Display the current time in the zone “America/New_York” 
+2.	Create and display  OffsetDateTime object with offset -6(or any other offset) and parsing a specific time
+3.	Create and display   ZonedDateTime object with zone “America/New_York”  (or any other zone) and parsing a specific time
+4. Implement the abstract method of following interface using lambda expressions
+  
+	public interface BinaryOperation {
+		int calculate(int number1,int number 2);
+	}
+  Note: create implement binary operation such as  addition , substraction ,multiplication
+	

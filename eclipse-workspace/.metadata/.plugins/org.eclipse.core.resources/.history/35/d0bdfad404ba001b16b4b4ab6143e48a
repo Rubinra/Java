@@ -1,0 +1,9 @@
+package java8features;
+
+public class JoinString {
+	public static void main(String[] args) {
+	String [] array= {"Steve", "Rick", "Peter", "Abbey"};
+	String [] array1= {"Steve", "Rick", "Peter", "Abbey"};
+	System.out.println(String.join(array, array1));
+}
+}

@@ -1,0 +1,10 @@
+package java8features;
+import java.time.*;
+public class task4 {
+	public static void main(String[] args) {
+		LocalDateTime now = LocalDateTime.now();
+		//a,Adding (50 Days)
+		LocalDateTime adddate50 = now.plusDays(50);
+		
+	}
+}

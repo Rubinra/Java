@@ -1,0 +1,49 @@
+package java8featuresStramApi;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StreamExample {
+	public static void main(String[] args) {
+		List<Employee> empList = new ArrayList<>();
+		empList.add(new Employee("Pankaj", 35));
+		empList.add(new Employee("David", 25));
+		empList.add(new Employee("Lisa", 31));
+		empList.add(new Employee("Dean", 40));
+
+		// print all employees above 32 years of age
+		empList.stream().filter(p -> (p.getAge() > 32)).forEach(p -> System.out.println(p.getName()));
+
+	}
+
+}
+
+class Employee {
+	private String name;
+	private int age;
+
+	public Employee() {
+	}
+
+	public Employee(String n, int a) {
+		this.name = n;
+		this.age = a;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+}
+
